@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Resmi Visit Industri 2026 - HMSI UNPAM Serang</title>
+  <link rel="icon" type="image/png" href="LOGO HMSI.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-navy: #0f2b5c;
+      --primary-blue: #1e4287;
+      --accent-blue: #0284c7;
+      --light-blue: #f0f7ff;
+      --bg-page: #0d2146;
+      --surface-white: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background: linear-gradient(180deg, var(--bg-page) 0%, #0a1730 100%);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 20px 12px 60px;
+    }
+
+    .container {
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      padding: 16px 8px 24px;
+    }
+
+    .logo-container {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 14px;
+      background: #ffffff;
+      border-radius: var(--radius-full);
+      padding: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .institution-tag {
+      color: #93c5fd;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.25;
+    }
+
+    p.subtitle {
+      color: #cbd5e1;
+      font-size: 0.85rem;
+      margin-top: 6px;
+    }
+
+    /* Tab Switcher */
+    .tab-wrapper {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      padding: 4px;
+      border-radius: var(--radius-full);
+      display: flex;
+      gap: 4px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 10px 16px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border: none;
+      background: transparent;
+      color: #cbd5e1;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .tab-btn.active {
+      background: #ffffff;
+      color: var(--primary-navy);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Instruction Alert */
+    .alert-box {
+      background: #ffffff;
+      border-left: 4px solid var(--accent-blue);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      margin-bottom: 20px;
+      font-size: 0.82rem;
+      color: #334155;
+      line-height: 1.45;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .alert-box strong {
+      color: var(--primary-navy);
+    }
+
+    /* Cards */
+    .card {
+      background: var(--surface-white);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .group-code {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--primary-navy);
+    }
+
+    .mentor-badge {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--primary-blue);
+      background: var(--light-blue);
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+    }
+
+    .member-list {
+      list-style: none;
+      margin-bottom: 14px;
+    }
+
+    .member-list li {
+      font-size: 0.83rem;
+      color: #475569;
+      padding: 2px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .member-bullet {
+      width: 4px;
+      height: 4px;
+      background: var(--accent-blue);
+      border-radius: var(--radius-full);
+      display: inline-block;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 11px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+      cursor: pointer;
+    }
+
+    .btn:active {
+      transform: scale(0.99);
+    }
+
+    .btn-wa {
+      background-color: #15803d;
+      color: #ffffff;
+    }
+
+    .btn-wa:hover {
+      background-color: #166534;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-blue);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-navy);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--primary-blue);
+      border: 1px solid var(--primary-blue);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--light-blue);
+    }
+
+    /* Sponsor Container */
+    .sponsor-card {
+      background: var(--surface-white);
+      border-radius: var(--radius-md);
+      padding: 18px 16px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .sponsor-header {
+      margin-bottom: 8px;
+    }
+
+    .sponsor-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary-navy);
+    }
+
+    .sponsor-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+
+    .sponsor-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* Clean SVG icons */
+    .icon {
+      width: 16px;
+      height: 16px;
+      stroke-width: 2;
+      stroke: currentColor;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo-container">
+        <!-- Ganti URL logo dengan path logo resmi HMSI jika diperlukan -->
+        <img src="LOGO HMSI.png" alt="Logo HMSI UNPAM" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%230f2b5c\'><path d=\'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\'/></svg>'">
+      </div>
+      <span class="institution-tag">HMSI UNPAM Kampus Kota Serang</span>
+      <h1>Visit Industri 2026</h1>
+      <p class="subtitle">Portal Pembagian Kelompok & Validasi Mitra Kerja Sama</p>
+    </header>
+
+    <!-- Tab Bar -->
+    <div class="tab-wrapper">
+      <button class="tab-btn active" onclick="switchTab('tab-wa', this)">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        Grup WhatsApp
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-sponsor', this)">
+        <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        Dukungan Mitra
+      </button>
+    </div>
+
+    <!-- TAB 1: GRUP WHATSAPP -->
+    <div id="tab-wa" class="tab-content active">
+      <div class="alert-box">
+        <strong>Instruksi:</strong> Silakan cari nama Anda pada daftar di bawah, lalu klik tombol hijau untuk bergabung ke grup koordinasi pendamping masing-masing.
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 01</span>
+          <span class="mentor-badge">PJ: Fahri</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Aprijal Ma’arip</li>
+          <li><span class="member-bullet"></span> Devandra Febriansyah</li>
+          <li><span class="member-bullet"></span> Isyfan Rusyda Syahrier</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/GXvoDx85lQmDm8abgNOVgt?s=cl&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 02</span>
+          <span class="mentor-badge">PJ: Nana</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Riska M Hardianti</li>
+          <li><span class="member-bullet"></span> Rindu Aprina</li>
+          <li><span class="member-bullet"></span> Novelia Julista</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/Ea05ILGbbpdISYqacy2art?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 03</span>
+          <span class="mentor-badge">PJ: Arin</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Nur Ahmad Trias Syadewa</li>
+          <li><span class="member-bullet"></span> Thobibah Azzahra</li>
+          <li><span class="member-bullet"></span> Ifha Muti Rizkiyah</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/DOqMHw0Bkz7BJ5LNtNgYg0?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 04</span>
+          <span class="mentor-badge">PJ: Tata</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Ahmad Alfin Firdaus</li>
+          <li><span class="member-bullet"></span> Sri Rahayu</li>
+          <li><span class="member-bullet"></span> Mega Shakilla</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/FBNhabzWRVrD17cHvHBPL4?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 05</span>
+          <span class="mentor-badge">PJ: Pikri</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Mutiara Azizah</li>
+          <li><span class="member-bullet"></span> Ratu Agustuna Romadhona</li>
+          <li><span class="member-bullet"></span> Agus Hamdan</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/BpqoOuCPjWABETDAbNUNO8?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 06</span>
+          <span class="mentor-badge">PJ: Fadhil</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Enggar Hestu</li>
+          <li><span class="member-bullet"></span> Samudera</li>
+          <li><span class="member-bullet"></span> Zalfa Shafiyah</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/HrUUaPSz8k78OBuqcNJzxT?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 07</span>
+          <span class="mentor-badge">PJ: Sherly</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Cut Khalisa Syifa R</li>
+          <li><span class="member-bullet"></span> Nur Ainun Febriyanti</li>
+          <li><span class="member-bullet"></span> Asiti</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/G6PKdeKrOY2AunjeQlsbc5?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 08</span>
+          <span class="mentor-badge">PJ: Lika</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Raya Sita Saraswati</li>
+          <li><span class="member-bullet"></span> Nabila Afifah</li>
+          <li><span class="member-bullet"></span> Akbar Ismail Muhammad</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/EruSGl5VRx2JSMtk8nCuJ6?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 09</span>
+          <span class="mentor-badge">PJ: Amel</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Dini Nurul Fauziah</li>
+          <li><span class="member-bullet"></span> Alin</li>
+          <li><span class="member-bullet"></span> Inayatul Hikmah</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/IX67QISv3Is3qM4lcKRJwj?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 10</span>
+          <span class="mentor-badge">PJ: Silvi</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Janwita Zulfriyani</li>
+          <li><span class="member-bullet"></span> Athoillah</li>
+          <li><span class="member-bullet"></span> Dera Fahriyanti</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/HeepG7QkWN31X7e8gS7j2N?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 11</span>
+          <span class="mentor-badge">PJ: Fajrah</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Dhirgham Aziz P</li>
+          <li><span class="member-bullet"></span> Madya Bayu Pradipta</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/CNJdgFPqf8J3nYgl1ejIEv?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 12</span>
+          <span class="mentor-badge">PJ: Ratna</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Rifki Januarhadi</li>
+          <li><span class="member-bullet"></span> Tika Prohatiwi S</li>
+          <li><span class="member-bullet"></span> Muhammad Abdullah Isnein</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/BOJ0ejYbMOnHdakyUhSxSs?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 13</span>
+          <span class="mentor-badge">PJ: Faruq</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Muhammad Ismail Fattah</li>
+          <li><span class="member-bullet"></span> Risma Rizkiyani</li>
+          <li><span class="member-bullet"></span> Uci Safitri</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/F4LkYnfnPkpLvYHTK4s0ZP?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 14</span>
+          <span class="mentor-badge">PJ: Zainet</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Moza Safitri Dewi</li>
+          <li><span class="member-bullet"></span> Nadya Muhammadi</li>
+          <li><span class="member-bullet"></span> Elda Putri Sumantri</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/JOvdErjPyHWL9Lwtl96ywI?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 15</span>
+          <span class="mentor-badge">PJ: Habib</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Andi Alfath Rizki Ali</li>
+          <li><span class="member-bullet"></span> Muhammad Thoriq Adi Mukhsith</li>
+          <li><span class="member-bullet"></span> Sirojul Munir</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/JQDHfADcwY73LTwnRn8SAI?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 16</span>
+          <span class="mentor-badge">PJ: Ikma</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Irna Hasfita Dewi</li>
+          <li><span class="member-bullet"></span> Hafizh Isnu Sahlan</li>
+          <li><span class="member-bullet"></span> Prati Dina Swasti</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/F0nFXci6TmXG3KRZFNtVNw?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 17</span>
+          <span class="mentor-badge">PJ: Adel</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Fauziah Nurina Fikri</li>
+          <li><span class="member-bullet"></span> Muhammad Ridwan Radiansyah</li>
+          <li><span class="member-bullet"></span> Aan Subki Al Hudri</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/F460uapGhlIEwxrFoDR63T?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 18</span>
+          <span class="mentor-badge">PJ: Yuli</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Imas Mulyani</li>
+          <li><span class="member-bullet"></span> Siti Syahda Kristiani</li>
+          <li><span class="member-bullet"></span> Fikri Ardiansyah</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/HRf7SjbkDST8okADz1Ffxp?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 19</span>
+          <span class="mentor-badge">PJ: Davin</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Aziz Faturahman</li>
+          <li><span class="member-bullet"></span> Dewi Amelia</li>
+          <li><span class="member-bullet"></span> Nesa Nova Rita</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/HyWBxzZju9W8wVgHwjEVSF?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 20</span>
+          <span class="mentor-badge">PJ: Divia</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Vidya Nabila</li>
+          <li><span class="member-bullet"></span> Andini Rahayu</li>
+          <li><span class="member-bullet"></span> Azzahra Pasha Aurelia</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/Iieq884RN7pIk5pkLW4r3y?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 21</span>
+          <span class="mentor-badge">PJ: Ubay</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Kahlil Gibran</li>
+          <li><span class="member-bullet"></span> Sushylawati</li>
+          <li><span class="member-bullet"></span> Irma Putri Zami</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/EkD9oHZ43hc0BbsMdkMF3s?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 22</span>
+          <span class="mentor-badge">PJ: Niko</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Putrie Fatuningsih</li>
+          <li><span class="member-bullet"></span> M. Ilkham Ramadhani</li>
+          <li><span class="member-bullet"></span> Sherly Meyse Andrea</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/D4EtDPRQVkn8dxSYRgPaOS?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="group-code">Kelompok 23</span>
+          <span class="mentor-badge">PJ: Lidya</span>
+        </div>
+        <ul class="member-list">
+          <li><span class="member-bullet"></span> Aprilia</li>
+          <li><span class="member-bullet"></span> Chita Anggrea Meliansyah</li>
+          <li><span class="member-bullet"></span> Muhammad Ade Reza</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/EsJfvWnvCG57EvUUssLzbm?s=sw&p=a&mlu=4&ilr=4" class="btn btn-wa" target="_blank">Gabung Grup Koordinasi</a>
+      </div>
+    </div>
+
+    <!-- TAB 2: SPONSORSHIP -->
+    <div id="tab-sponsor" class="tab-content">
+      <div class="alert-box">
+        <strong>Ketentuan Sinergi:</strong> Mohon berikan ulasan dan ikuti akun resmi mitra pendukung kegiatan. Tangkap layar (screenshot) bukti penyelesaian dan kirimkan ke grup WhatsApp pendamping Anda.
+      </div>
+
+      <!-- Mitra 1 -->
+      <div class="sponsor-card">
+        <div class="sponsor-header">
+          <div class="sponsor-title">Sewa HT Serang</div>
+        </div>
+        <p class="sponsor-desc">Mitra penyedia komunikasi lapangan. Berikan rating bintang 5 dan ulasan pada profil Google Maps resmi.</p>
+        <div class="sponsor-actions">
+          <a href="https://maps.app.goo.gl/dacQKBPr58McTNeW9" class="btn btn-primary" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            Beri Ulasan di Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- Mitra 2 -->
+      <div class="sponsor-card">
+        <div class="sponsor-header">
+          <div class="sponsor-title">RC Studio and Space</div>
+        </div>
+        <p class="sponsor-desc">Mitra pendukung dokumentasi dan studio. Ikuti akun Instagram resmi dan berikan rating bintang 5 pada Google Maps.</p>
+        <div class="sponsor-actions">
+          <a href="https://www.instagram.com/rc.studionspace?stkn=aW5leWxpNmF2bmp3" class="btn btn-outline" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            Follow Instagram @rc.studioandspace
+          </a>
+          <a href="https://maps.app.goo.gl/CqxN2SZ7pypjLDTq8" class="btn btn-primary" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            Beri Ulasan di Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- Mitra 3 -->
+      <div class="sponsor-card">
+        <div class="sponsor-header">
+          <div class="sponsor-title">Ababil Gold</div>
+        </div>
+        <p class="sponsor-desc">Mitra pendukung kegiatan. Terhubung dengan kontak layanan resmi Ababil Gold melalui tautan WhatsApp.</p>
+        <div class="sponsor-actions">
+          <a href="https://api.whatsapp.com/send?phone=628111983176&text=Halo%2C%20Kak.%20Aku%20mau%20tanya-tanya%20tentang%20emas%20dan%20logam%20mulia%20di%20Ababil%20Gold." class="btn btn-wa" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            Hubungi WhatsApp Resmi
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchTab(tabId, element) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+
+      document.getElementById(tabId).classList.add('active');
+      element.classList.add('active');
+      
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
